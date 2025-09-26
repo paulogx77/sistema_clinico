@@ -116,4 +116,4 @@ Assinatura
 
 | Data         | Versão | Descrição                                                                                                     | Autor      | Revisor  | Aprovado por |
 | ------------ | ------ | ------------------------------------------------------------------------------------------------------------- | ---------- | -------- | ------------ |
-| [Data Atual] | 1.2    | Atualização para incluir a **Gestão de Filas (Senhas)** e o fluxo de atendimento imediato, com abertura automática do prontuário na chamada da senha. | [Seu Nome] | A definir | A definir    |
+| A definir | 1.0    | Atualização para incluir a **Gestão de Filas (Senhas)** e o fluxo de atendimento imediato, com abertura automática do prontuário na chamada da senha. | A definir | A definir | A definir    |
