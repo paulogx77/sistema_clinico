@@ -8,7 +8,6 @@ A visão do sistema documenta o ambiente geral de processos desenvolvidos para a
 ## 2. Descrição do Produto
 O **Sistema de Gestão de Clínica de Saúde** é um projeto direcionado para clínicas de saúde de pequeno e médio porte, consultórios médicos e profissionais de saúde autônomos que necessitam de uma solução digital para modernizar a gestão de pacientes, agendamentos e prontuários eletrônicos.
 
-### Minimundo:
 O sistema visa centralizar as informações dos pacientes, agilizar o fluxo de trabalho de médicos e recepcionistas, e fornecer uma plataforma robusta e segura para o gerenciamento clínico. As funcionalidades chave incluem:
 
 - **Cadastro e Gestão de Pacientes**: Inclusão, edição, consulta e busca rápida de fichas de pacientes.
