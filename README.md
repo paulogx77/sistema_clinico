@@ -1,92 +1,102 @@
-# Sistema de Gestão de Clínica de Saúde - Documento de Visão
+Sistema de Gestão de Clínica de Saúde - Documento de Visão
+1. Objetivo
+O propósito deste documento é coletar, analisar e definir as necessidades e características do 
 
-Este documento descreve a visão geral, os objetivos, os stakeholders e os requisitos de alto nível para o **Sistema de Gestão de Clínica de Saúde**, desenvolvido como projeto para a disciplina de Análise e Projeto de Sistemas.
+Sistema de Gestão de Clínica de Saúde, focando nas potencialidades requeridas pelos desenvolvedores e usuários-alvo, e como estes requisitos serão abordados no sistema.
 
-## 1. Introdução
+A visão do sistema documenta o ambiente geral de processos desenvolvidos para a gestão clínica, fornecendo a todos os envolvidos uma descrição compreensível deste e suas macro-funcionalidades.
 
-O objetivo deste projeto é desenvolver um sistema de gestão para clínicas de saúde que otimize os processos internos, desde o agendamento de consultas até o registro completo do atendimento médico. O sistema visa centralizar as informações dos pacientes, agilizar o fluxo de trabalho de médicos e recepcionistas e fornecer uma plataforma robusta e segura para o gerenciamento clínico.
+2. Descrição do Produto
+O 
 
-## 2. Posição do Produto
+Sistema de Gestão de Clínica de Saúde é um projeto direcionado para clínicas de saúde de pequeno e médio porte, consultórios médicos e profissionais de saúde autônomos  que necessitam de uma solução digital para modernizar a gestão de pacientes, agendamentos e prontuários eletrônicos.
 
-**Para:** Clínicas de saúde de pequeno e médio porte, consultórios médicos e profissionais de saúde autônomos.  
-**Que:** Necessitam de uma solução digital para modernizar a gestão de pacientes, agendamentos e prontuários eletrônicos.  
-**O:** Sistema de Gestão de Clínica de Saúde é uma aplicação web de gerenciamento.  
-**Que:** Proporciona uma plataforma integrada para digitalizar e automatizar os fluxos de trabalho, minimizando erros manuais, otimizando o tempo da equipe e melhorando a qualidade do atendimento ao paciente.  
-**Diferentemente de:** Métodos manuais baseados em papel ou sistemas de software fragmentados e complexos.  
-**Nosso produto:** Oferece uma interface de usuário intuitiva e limpa, módulos integrados para uma gestão completa e foco na segurança e confidencialidade dos dados, garantindo eficiência e conformidade com as normas de privacidade.
 
-## 3. Descrição dos Usuários e Stakeholders
+Minimundo:
+O sistema visa centralizar as informações dos pacientes, agilizar o fluxo de trabalho de médicos e recepcionistas, e fornecer uma plataforma robusta e segura para o gerenciamento clínico. As funcionalidades chave incluem:
 
-### Usuários Finais
+Cadastro e Gestão de Pacientes: Inclusão, edição, consulta e busca rápida de fichas de pacientes.
 
-- **Médico(a):** Responsável pelo atendimento, diagnóstico e registro de informações clínicas no prontuário eletrônico do paciente.
-- **Recepcionista/Secretário(a):** Responsável pelo cadastro de pacientes, agendamento de consultas e gerenciamento da agenda da clínica.
-- **Administrador(a) da Clínica:** Responsável por supervisionar as operações, gerenciar usuários do sistema e ter uma visão geral dos atendimentos.
+Agendamento de Consultas: Agenda visual por profissional, com funcionalidades para agendar, reagendar, cancelar e visualizar o status das consultas.
 
-### Outros Stakeholders
+Atendimento (Prontuário Eletrônico): Registro de anamnese, evolução, exames, diagnósticos, histórico cronológico de atendimentos, e prescrição digital de medicamentos e exames.
 
-- **Paciente:** Beneficiário indireto de um atendimento mais ágil e organizado, com seus dados gerenciados de forma segura.
-- **Equipe de Desenvolvimento:** Responsável pela concepção, desenvolvimento, testes e manutenção do sistema.
+Segurança: Sistema de autenticação e autorização por perfis para garantir controle de acesso e confidencialidade dos dados.
 
-## 4. Visão Geral do Sistema
+Gestão de Usuários: O Administrador(a) da Clínica supervisiona operações e gerencia o acesso dos usuários do sistema.
 
-### 4.1. Principais Funcionalidades
+O sistema proporciona uma plataforma integrada para digitalizar e automatizar os fluxos de trabalho, minimizando erros manuais, otimizando o tempo da equipe e melhorando a qualidade do atendimento ao paciente.
 
-#### Módulo de Pacientes:
-- Cadastro, edição e consulta de fichas de pacientes.
-- Busca rápida por nome, CPF ou outros identificadores.
+3. Envolvimento
+3.1. Abrangência
+O sistema foi concebido como uma aplicação web de gerenciamento, para uso inicial em clínicas de saúde de pequeno e médio porte.
 
-#### Módulo de Agendamento:
-- Agenda visual por profissional de saúde.
-- Funcionalidades para agendar, reagendar e cancelar consultas.
-- Visualização de status das consultas (agendada, confirmada, finalizada).
+3.2. Papel dos Atores
+Atores são pessoas, equipamentos ou outros sistemas que interagem com o sistema em questão, enviando ou recebendo mensagens. Abaixo estão descritos de forma resumida o papel dos atores do sistema.
 
-#### Módulo de Atendimento (Prontuário Eletrônico):
-- Registro da anamnese, evolução, exames e diagnósticos do paciente.
-- Histórico cronológico de todos os atendimentos.
-- Prescrição digital de medicamentos e solicitação de exames.
+Ator	Descrição	Papel	Insumos ao sistema	Representante
+Recepcionista / Secretário(a)	O usuário que irá utilizar diariamente o sistema para gerenciar o fluxo de atendimento.	Gerenciar a agenda, o cadastro de pacientes e o status das consultas diariamente. É vital para o bom funcionamento do sistema, pois fornece os dados iniciais.	- Dados dos Pacientes (Cadastro) - Dados dos Agendamentos (Agendar, Reagendar, Cancelar) - Status das Consultas	A definir
+Médico(a)	Responsável pelo atendimento clínico do paciente.	Utilizar o Prontuário Eletrônico para registrar todo o atendimento, garantindo a completude do histórico clínico.	- Dados da Anamnese/Evolução - Diagnósticos - Prescrições de medicamentos e exames - Evolução do paciente	A definir
+Administrador(a) da Clínica	Responsável por supervisionar e gerenciar a plataforma como um todo.	Gerenciar os usuários, perfis de acesso e ter uma visão geral das operações da clínica.	- Cadastro e gestão de usuários/perfis.	A definir
+Sistema de Gestão de Clínica de Saúde	É o próprio sistema e suas funcionalidades.	Realiza cálculos ou gera dados para utilização, como o histórico do paciente ou a agenda.	- Cálculo de horários disponíveis. - Geração de histórico cronológico. - Segurança e controle de acesso.	A definir
+Paciente	Beneficiário indireto do sistema.	Não interage diretamente nesta versão inicial, mas se beneficia do atendimento mais ágil e seguro.	Não se aplica (na versão atual)	A definir
 
-#### Módulo de Segurança:
-- Sistema de autenticação e autorização por perfis (Administrador, Médico, Recepcionista).
-- Controle de acesso para garantir que cada usuário veja apenas as informações pertinentes à sua função.
+Exportar para as Planilhas
+4. Necessidades e Funcionalidades
+Esta seção descreve as principais necessidades e funcionalidades requeridas pelas partes interessadas, relacionando-as a cada ator.
 
-### 4.2. Escopo Futuro (Possíveis Melhorias)
-- Integração com faturamento e controle financeiro.
-- Portal do paciente para agendamento online e visualização de resultados de exames.
-- Geração de relatórios gerenciais e estatísticos.
-- Envio de lembretes de consulta por e-mail ou SMS.
+Necessidade	Benefício	Id Func.	Descrição das Funcionalidades / Atores Envolvidos
+1. Gestão de Pacientes	Crítico	F 1.1	Inclusão de Novos Pacientes Recepcionista - Fornece os dados de cadastro solicitados pelo sistema.
+F 1.2	Pesquisa / Listagem de Pacientes Recepcionista / Médico - Fornece nome, CPF ou outro identificador e o sistema retorna uma lista.
+F 1.3	Alteração de dados do paciente Recepcionista - Pesquisa um paciente existente e fornece dados atualizados.
+F 1.4	Visualização da Ficha Completa Recepcionista / Médico - Acesso à ficha completa e dados de contato.
+2. Controle de Agendamento	Crítico	F 2.1	Agendar Consulta Recepcionista - Informa paciente, profissional, data, hora e motivo da consulta.
+F 2.2	Visualização de Agenda Recepcionista / Médico - Agenda visual por profissional para visualizar horários.
+F 2.3	Reagendar / Cancelar Consulta Recepcionista - Altera a data/hora ou cancela o agendamento, registrando o motivo.
+F 2.4	Alteração de Status da Consulta Recepcionista - Atualiza o status (Agendada, Confirmada, Finalizada).
+3. Prontuário Eletrônico	Crítico	F 3.1	Abertura/Início de Atendimento Médico - Inicia o registro do prontuário a partir do agendamento.
+F 3.2	Registro de Anamnese, Evolução e Diagnóstico Médico - Registra as informações clínicas do paciente.
+F 3.3	Histórico Cronológico de Atendimentos Médico - Acessa o histórico completo de consultas do paciente.
+F 3.4	Prescrição Digital de Medicamentos/Exames Médico - Gera prescrições e solicitações de exames eletronicamente.
+4. Segurança do Sistema	Crítico	F 4.1	Autenticação do Usuário Todos os Atores - Informam nome de usuário e senha para acessar o sistema.
+F 4.2	Controle de Acesso por Perfil Sistema - Restringe o acesso às funcionalidades e dados de acordo com o perfil (Médico, Recepcionista, Administrador).
+5. Gestão de Usuários e Perfis	Importante	F 5.1	Inclusão de Novos Usuários/Perfis Administrador - Cadastra novos membros da equipe e atribui perfis de acesso.
+F 5.2	Alteração / Bloqueio de Usuários Administrador - Altera dados ou inativa/bloqueia o acesso de um usuário.
 
-## 5. Requisitos de Alto Nível
+Exportar para as Planilhas
+6. Tecnologias Propostas
+O sistema será desenvolvido em linguagem de programação com capacidade de gerar páginas web para uso do sistema dentro de um navegador web e realizar conexão com banco de dados.
 
-### 5.1. Requisitos Funcionais
-- O sistema deve permitir o cadastro completo de pacientes.
-- O sistema deve fornecer uma interface de agenda para gerenciar consultas.
-- O sistema deve permitir que médicos registrem e acessem o histórico de atendimentos de um paciente.
-- O sistema deve controlar o acesso às funcionalidades com base no perfil do usuário.
+Arquitetura: Moderna e desacoplada, com API REST no back-end e Single Page Application (SPA) no front-end.
 
-### 5.2. Requisitos Não-Funcionais
-- **Segurança:** Os dados dos pacientes devem ser armazenados de forma segura e o acesso ao sistema deve ser protegido por autenticação.
-- **Usabilidade:** A interface deve ser intuitiva e de fácil utilização, minimizando a necessidade de treinamento extensivo.
-- **Desempenho:** As operações críticas, como busca de pacientes e carregamento de prontuários, devem ter um tempo de resposta rápido.
-- **Confiabilidade:** O sistema deve ser estável e garantir a integridade dos dados registrados.
+Front-end: React, TypeScript.
 
-## 6. Tecnologias Propostas
+Back-end: Spring Boot, Java, API RESTful.
 
-O sistema será desenvolvido utilizando uma arquitetura moderna e desacoplada, com uma API REST no back-end e uma Single Page Application (SPA) no front-end.
+Banco de Dados: PostgreSQL.
 
-### Front-end:
-- **Framework:** React
-- **Linguagem:** TypeScript
-- **Estilização:** (Ex: Material-UI, Styled Components, etc.)
+Controle de Versão: Git e GitHub.
 
-### Back-end:
-- **Framework:** Spring Boot
-- **Linguagem:** Java
-- **API:** RESTful
+7. Escopo Futuro (Possíveis Melhorias)
+Integração com faturamento e controle financeiro.
 
-### Banco de Dados:
-- **SGBD:** PostgreSQL
+Portal do paciente para agendamento online e visualização de resultados de exames.
 
-### Controle de Versão:
-- **Ferramenta:** Git
-- **Plataforma:** GitHub
+Geração de relatórios gerenciais e estatísticos.
+
+Envio de lembretes de consulta por e-mail ou SMS.
+
+8. Requisitos Não-Funcionais
+Segurança: Os dados dos pacientes devem ser armazenados de forma segura e o acesso ao sistema deve ser protegido por autenticação.
+
+Usabilidade: A interface deve ser intuitiva e de fácil utilização, minimizando a necessidade de treinamento extensivo.
+
+Desempenho: As operações críticas, como busca de pacientes e carregamento de prontuários, devem ter um tempo de resposta rápido.
+
+Confiabilidade: O sistema deve ser estável e garantir a integridade dos dados registrados.
+
+Termo de Aceitação
+Eu, [Nome do Proprietário/Administrador da Clínica], certifico que estou ciente e de acordo com a visão do sistema acima apresentada, no que se refere às funcionalidades e aos requisitos descritos neste documento.
+
+Assinatura
+
