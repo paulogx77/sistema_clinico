@@ -42,8 +42,8 @@
         @OneToMany(mappedBy = "calledByDoctor", cascade = CascadeType.ALL, orphanRemoval = true)
         private List<ServiceTicket> calledTickets = new ArrayList<>(); // List<ServiceTicket> [cite: 9]
 
-        @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL, orphanRemoval = true)
-        private List<MedicalRecord> medicalRecords = new ArrayList<>(); // List<MedicalRecord> [cite: 9]
+        @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+        private List<MedicalRecord> medicalRecords = new ArrayList<>();
 
         // Construtor padrão (necessário para JPA)
         public User() {}
