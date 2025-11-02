@@ -2,6 +2,8 @@ package com.clinica.controller;
 
 import com.clinica.dto.LoginRequest;
 import com.clinica.dto.LoginResponse;
+import com.clinica.dto.RefreshTokenRequest;
+import com.clinica.dto.RegisterRequest;
 import com.clinica.service.auth.JwtService;
 import com.clinica.service.auth.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,4 +62,37 @@ public class AuthController {
             throw new RuntimeException("Credenciais inválidas.");
         }
     }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> registerUser(@RequestBody RegisterRequest request) {
+        try {
+            // Lógica de registro seria implementada aqui
+            // User user = userService.register(request);
+            return ResponseEntity.ok().body("Usuário registrado com sucesso");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Erro no registro: " + e.getMessage());
+        }
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<Void> logout() {
+        // Em uma implementação real, invalidaria o token
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("/refresh-token")
+    public ResponseEntity<LoginResponse> refreshToken(@RequestBody RefreshTokenRequest request) {
+        try {
+            // Lógica para refresh token
+            // String newToken = jwtService.refreshToken(request.getToken());
+
+            LoginResponse response = new LoginResponse();
+            response.setToken("new-token-here");
+            response.setType("Bearer");
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            return ResponseEntity.status(401).build();
+        }
+    }
+
 }
