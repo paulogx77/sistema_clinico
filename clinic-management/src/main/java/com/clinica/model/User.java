@@ -18,8 +18,6 @@
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
-
-        private String name;
         private String email;
         private String password; // [cite: 7]
 
@@ -45,6 +43,6 @@
         @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
         private List<MedicalRecord> medicalRecords = new ArrayList<>();
 
-        // Construtor padrão (necessário para JPA)
+        // Construtor
         public User() {}
     }
